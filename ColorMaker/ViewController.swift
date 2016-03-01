@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorView: UIView!
     
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var blueSwitch: UISwitch!
+    
     @IBOutlet weak var redControl: UISlider!
     @IBOutlet weak var greenControl: UISlider!
     @IBOutlet weak var blueControl: UISlider!
@@ -23,11 +27,22 @@ class ViewController: UIViewController {
     
     @IBAction func changeColorComponent(sender: AnyObject) {
         
-        let r: CGFloat = CGFloat(self.redControl.value)
-        let g: CGFloat = CGFloat(self.greenControl.value)
-        let b: CGFloat = CGFloat(self.blueControl.value)
+        let r = setColor(redSwitch.on, whichSlider: redControl)
+        let g = setColor(greenSwitch.on, whichSlider: greenControl)
+        let b = setColor(blueSwitch.on, whichSlider: blueControl)
                 
         colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+    }
+    
+    func setColor(switchIsOn: Bool, whichSlider: UISlider) -> CGFloat {
+        let colorValue : CGFloat
+        
+        if switchIsOn {
+            colorValue = CGFloat(whichSlider.value)
+            return colorValue
+        } else {
+            return 0
+        }
     }
 }
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E49a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23a-9A-dZi">
-                                <rect key="frame" x="183" y="97" width="235" height="165"/>
+                                <rect key="frame" x="57" y="97" width="490" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-Kc-EhE">
-                                        <rect key="frame" x="17" y="23" width="73" height="21"/>
+                                        <rect key="frame" x="90" y="23" width="73" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="9Ob-9O-IxS"/>
                                             <constraint firstAttribute="height" constant="21" id="G2U-V6-Jiu"/>
@@ -32,7 +33,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeB-Ui-15Q">
-                                        <rect key="frame" x="17" y="73" width="73" height="21"/>
+                                        <rect key="frame" x="90" y="73" width="73" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="73" id="brE-rH-dHa"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="ijK-cS-6HX"/>
@@ -44,7 +45,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfO-MJ-TIi">
-                                        <rect key="frame" x="17" y="124" width="73" height="21"/>
+                                        <rect key="frame" x="90" y="124" width="73" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="73" id="02j-l3-0MZ"/>
                                             <constraint firstAttribute="width" constant="73" id="DlF-DC-GKp"/>
@@ -56,26 +57,44 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="CcJ-mK-OPZ">
-                                        <rect key="frame" x="104" y="19" width="118" height="31"/>
+                                        <rect key="frame" x="271" y="19" width="118" height="31"/>
                                         <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="E1k-Ow-KrJ"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ISX-5h-8wg">
-                                        <rect key="frame" x="104" y="67" width="118" height="31"/>
+                                        <rect key="frame" x="271" y="67" width="118" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="sU3-Me-jf0"/>
                                         </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Msv-VF-kLw">
-                                        <rect key="frame" x="104" y="120" width="118" height="31"/>
+                                        <rect key="frame" x="271" y="120" width="118" height="31"/>
                                         <color key="minimumTrackTintColor" red="0.050980392159999999" green="0.41176470590000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="O8B-cB-Fet"/>
                                         </connections>
                                     </slider>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lJs-7H-Ivd">
+                                        <rect key="frame" x="182" y="19" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Sh5-vw-Cum"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jgd-Qk-s9q">
+                                        <rect key="frame" x="182" y="67" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="g9q-zG-sJY"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-8u-eyv">
+                                        <rect key="frame" x="182" y="119" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="TL3-RP-RtU"/>
+                                        </connections>
+                                    </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -112,9 +131,12 @@
                     </view>
                     <connections>
                         <outlet property="blueControl" destination="Msv-VF-kLw" id="kjn-ac-wgb"/>
+                        <outlet property="blueSwitch" destination="UdR-8u-eyv" id="tos-dQ-RD2"/>
                         <outlet property="colorView" destination="AjB-H9-6TC" id="Gt7-G8-GYq"/>
                         <outlet property="greenControl" destination="ISX-5h-8wg" id="cDr-HR-7we"/>
+                        <outlet property="greenSwitch" destination="Jgd-Qk-s9q" id="ZZY-Xj-COb"/>
                         <outlet property="redControl" destination="CcJ-mK-OPZ" id="S7p-Lr-YYn"/>
+                        <outlet property="redSwitch" destination="lJs-7H-Ivd" id="eFg-H6-SjO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
