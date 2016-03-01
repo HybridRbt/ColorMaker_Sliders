@@ -33,5 +33,15 @@ class ViewController: UIViewController {
                 
         colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
     }
+    
+    func setColor(switchIsOn: Bool, whichSlider: UISlider) -> CGFloat {
+        let colorValue : CGFloat
+        
+        if switchIsOn {
+            colorValue = CGFloat(whichSlider.value)
+            return colorValue
+        } else {
+            return 0
+        }
 }
 
