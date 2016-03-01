@@ -27,9 +27,9 @@ class ViewController: UIViewController {
     
     @IBAction func changeColorComponent(sender: AnyObject) {
         
-        let r: CGFloat = CGFloat(self.redControl.value)
-        let g: CGFloat = CGFloat(self.greenControl.value)
-        let b: CGFloat = CGFloat(self.blueControl.value)
+        let r = setColor(redSwitch.on, whichSlider: redControl)
+        let g = setColor(greenSwitch.on, whichSlider: greenControl)
+        let b = setColor(blueSwitch.on, whichSlider: blueControl)
                 
         colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
     }
@@ -43,5 +43,6 @@ class ViewController: UIViewController {
         } else {
             return 0
         }
+    }
 }
 
