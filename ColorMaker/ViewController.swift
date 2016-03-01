@@ -12,6 +12,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorView: UIView!
     
+    @IBOutlet weak var redSwitch: UISwitch!
+    @IBOutlet weak var greenSwitch: UISwitch!
+    @IBOutlet weak var blueSwitch: UISwitch!
+    
     @IBOutlet weak var redControl: UISlider!
     @IBOutlet weak var greenControl: UISlider!
     @IBOutlet weak var blueControl: UISlider!
